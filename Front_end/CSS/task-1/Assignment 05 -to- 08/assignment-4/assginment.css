@@ -1,0 +1,48 @@
+/* Common styles for all divs */
+.assign-4-shape-1{
+    width: 400px;
+    height: 400px;
+    background-image: url('css-assignment-5-8 (1).png'); /* Replace with your image path */
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size:  80% 80%; 
+   /* Center the divs horizontally */
+    color: white;
+    font-size: 20px;
+    
+}
+.assign-4-shape-2{
+    width: 400px;
+    height: 400px;
+    background-image: url('css-assignment-5-8 (1).png'); /* Replace with your image path */
+    background-repeat: repeat-y;
+    background-position: 100px ;
+    background-size:  auto 
+   /* Center the divs horizontally */
+    color: white ;
+    font-size: 20px;
+    
+}
+.assign-4-shape-3{
+    width: 400px;
+    height: 400px;
+    background-image: url('css-assignment-5-8 (1).png'); 
+    background-repeat: repeat-x;
+     background-position: 0px 200px; 
+     background-size: 80%
+    color: black;
+    font-size: 20px;
+    
+}
+.assign-4-shape-4{
+    width: 400px;
+    height: 400px;
+    background-image: url('css-assignment-5-8 (1).png'); 
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size:  auto; 
+    color:black;
+    font-size: 20px;
+    
+}
+

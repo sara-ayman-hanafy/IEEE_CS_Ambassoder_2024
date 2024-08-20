@@ -1,0 +1,35 @@
+.red {
+    display: inline-block;
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border-color: red;
+    border-width: 5px;
+    border-style: solid;
+    outline: 5px solid black;
+
+}
+.green{
+    display: inline-block;
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border-color: blue green ;
+    border-width: 5px;
+    border-style: solid;
+    outline: 5px solid black;
+
+
+}
+.blue {
+    display: inline-block;
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border-color:  red green blue yellow;
+    border-width: 5px;
+    border-style: dashed;
+    outline: 5px solid black;
+
+
+}

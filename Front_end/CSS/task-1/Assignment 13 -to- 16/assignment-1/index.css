@@ -1,0 +1,16 @@
+
+.title {
+    color: red;
+}
+
+.parent > .title {
+    color: blue;
+}
+
+.parent  p, .title  p {
+    color: green;
+}
+
+div.title {
+    color: green;
+}
