@@ -1,0 +1,35 @@
+.parent {
+    background-color: #eee;
+    width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.item {
+    float: left;
+    margin: 15px;
+    background-color: #c3c9cd;
+    padding: 15px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.item1 {
+    width: calc(100% - 30px);
+}
+
+.item2, .item3, .item4 {
+    width: calc((100% / 3) - 30px);
+}
+
+.item5, .item6 {
+    width: calc((100% / 2) - 30px);
+}
+
+.item7, .item8, .item9, .item10 {
+    width: calc((100% / 4) - 30px);
+}
+
+.item1 , .item2, .item5 ,.item7 {
+    clear: both;
+}
