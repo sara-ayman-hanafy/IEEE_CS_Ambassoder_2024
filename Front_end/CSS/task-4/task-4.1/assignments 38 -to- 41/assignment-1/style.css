@@ -1,0 +1,36 @@
+ * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+ div {
+  width: 100px;
+  height: 100px;
+  background: #eee;
+  display: inline-block;
+  margin:20px ;
+  padding:20px;
+  border: 3px solid black;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius:50%;
+  box-shadow: 5px 5px 0 0 #2196f3 , -5px -5px 0 0 #e91e63;
+  position: relative;
+  counter-increment: counter;
+ }
+ div::before {
+    content: "Element";
+    position: absolute;
+    top:35px;
+ }
+ div::after{
+ content: counter(counter);
+ position: absolute;
+ background-color: black;
+ color: white;
+ padding: 5px 10px;
+ border-radius: 50%;
+ font-weight: bold;
+ top: -15px;
+ left: 34px;
+ }
