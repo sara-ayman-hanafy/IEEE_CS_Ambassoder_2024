@@ -1,0 +1,368 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #0a75ff;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Section */
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+header .logo {
+    color: var(--main-color);
+    font-size: 40px;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    font-size: 20px;
+    text-decoration: none;
+}
+
+header nav ul li a.home {
+    color: var(--main-color);
+    font-weight: bold;
+}
+
+header nav ul li a {
+    color: #fff;
+}
+
+/* Landing Section */
+.landing {
+    background-image: url('landing.jpg');
+    position: overlay;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-image: linear-gradient(hsla(0, 0%, 5%, 0.6), 
+    hsla(0, 0%, 5%, 0.6)
+    )
+    fill 1;
+}
+
+.landing-content {
+    text-align: center;
+    width: 600px;
+}
+
+.landing-content h1 {
+    color: var(--main-color);
+    font-size: 50px;
+    font-weight: bold;
+    background-image: linear-gradient(43deg,  #2620c0 0%,  #0a75ff 46%, #283aa3 100%);
+    background-clip: text;
+  color: transparent;
+}
+
+.landing-content p {
+    margin: 20px;
+    font-size: 20px;
+    color: #f4f4f4;
+}
+
+/* Plans and Pricing Sections */
+.plans,
+.pricing {
+    padding: 30px;
+    text-align: center;
+}
+
+.plan-cards,
+.pricing-cards {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.icon,
+.icon-container {
+    background-color: #ddd;
+    border-radius: 50%;
+}
+
+.icon {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+}
+
+.icon-container {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px auto;
+}
+
+.icon-container i {
+    color: var(--main-color);
+    font-size: 48px;
+}
+
+.plan-card,
+.pricing-card {
+    padding: 10px;
+    text-align: center;
+    max-width: 300px;
+    flex: 1;
+    min-width: 280px;
+    margin: 10px;
+}
+
+.plan-card {
+    color: #333;
+}
+
+.pricing-card {
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    padding: 30px;
+}
+
+.plan-card h3,
+.pricing-card h3 {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.plan-card h3 {
+    font-size: 20px;
+}
+
+.pricing-card h3 {
+    font-size: 30px;
+    color: var(--main-color);
+    margin-bottom: 20px;
+}
+
+.plan-card p,
+.pricing-card p {
+    font-size: 16px;
+}
+
+.plan-card p {
+    color: #777;
+}
+
+.pricing-card p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.pricing ul,
+.pricing-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.pricing ul li,
+.pricing-card ul li {
+    margin: 10px 0;
+    font-size: 15px;
+    color: #777;
+}
+
+.pricing ul li {
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    margin-bottom: 10px;
+}
+
+.pricing ul li i {
+    color: #007bff;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.pricing-card button {
+    padding: 10px 20px;
+    border: 2px solid var(--main-color);
+    border-radius: 25px;
+    background-color: transparent;
+    color: var(--main-color);
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.pricing-card button:hover {
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+/* Skills Section */
+.skills {
+    padding: 50px;
+    text-align: center;
+}
+
+.skills h2 {
+    margin-bottom: 10px;
+}
+
+.skill-bar {
+    margin-bottom: 30px;
+    text-align: left;
+    position: relative;
+}
+
+.skill-bar label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.progress {
+    background-color: #ddd;
+    border-radius: 10px;
+    height: 20px;
+    width: 100%;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.progress-fill {
+    background-color: var(--main-color);
+    height: 100%;
+    border-radius: 10px;
+}
+
+.skill-bar::before {
+    content: attr(data-skill);
+    position: absolute;
+    padding: 8px;
+    top: -18px;
+    right: calc(100% - var(--percentage) - 10px);
+    background-color: var(--main-color);
+    color: #fff;
+    border-radius: 50%;
+    font-size: 14px;
+}
+
+.skill-bar[data-skill="95%"] {
+    --percentage: 95%;
+}
+
+.skill-bar[data-skill="93%"] {
+    --percentage: 93%;
+}
+
+.skill-bar[data-skill="85%"] {
+    --percentage: 85%;
+}
+
+.skill-bar[data-skill="87%"] {
+    --percentage: 87%;
+}
+
+.skill-bar::after {
+    content: "";
+    position: absolute;
+    border-width: 10px;
+    border-color: var(--main-color) transparent transparent transparent;
+    border-style: solid;
+    top: 11px;
+    right: calc(100% - var(--percentage));
+}
+
+/* Footer Section */
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto 20px auto;
+    background-color: #ddd;
+    padding: 20px;
+    color: #333;
+    width: 100%;
+    max-width: 1200px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-links {
+    margin-bottom: 20px;
+}
+
+.footer-links a {
+    color: var(--main-color);
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+.footer-social a {
+    color: var(--main-color);
+    font-size: 25px;
+}
+
+.footer-social a:hover {
+    color: #007bff;
+}
+
+footer p {
+    font-size: 14px;
+    color: #777;
+}
